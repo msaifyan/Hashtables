@@ -56,7 +56,7 @@ A hash function is an algorithm that produces an index of where a value can be f
 
 <img width="432" alt="Screen Shot 2021-10-10 at 11 06 26 AM" src="https://user-images.githubusercontent.com/86944952/136709260-f9564d97-7b15-45e5-a4bc-5c2a1417ffa7.png">
 
-So the city names starting with ‘A’ will be allotted a bucket index 0, ‘B’ with 1 and so on till ‘Z’ gets 25, and all the cities with their population will be stored in the allotted bucket.it
+So the city names starting with ‘A’ will be allotted a bucket index 0, ‘B’ with 1 and so on till ‘Z’ gets 25, and all the cities with their population will be stored in the allotted bucket.
 
 ***htable_put()***<br>
 The hashtable put function is used to actually map all of the city name keys to their corresponding buckets. The function employs the hashcode function to acquire a bucket index for the specific key given. Once the correct bucket is found, it is linearly searched to see if the key already exists within the bucket. If it does then its value is simply updated, otherwise the new key-value pair is linearly appended to the end of the bucket list.  For our data, you can see that our hashcode function puts all the cities in buckets based off of the first letter of their city name. 
