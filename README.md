@@ -31,13 +31,12 @@ The dataset used for this illustration contains the populations of all cities an
 
 
 ## Implementation 
-<b><u>Linear Search</u></b><br>
+***Linear Search***<br>
 We utilized linear search as a baseline search algorithm to look up terms within the dataset in linear time. 
 
-<b><u>create_linear_table()</u></b><br>
+***create_linear_table()***<br>
 This function creates an unordered list of tuples containing all cities and their corresponding populations.
-
-<b><u>linear_search()</u></b><br>
+***linear_search()***<br>
 This function looks through the list of tuples one by one and return the city's population with time complexity O(N), where N is the number of tuples in the list. 
 Using linear search, it takes about 30 microseconds to find Yucca Valley's population. It is fast right, but it could be faster using the hash table. 
 
@@ -73,6 +72,3 @@ For this particular example, you can see that using a hash table speeds up the t
 
 
 ![Screen Shot 2021-10-10 at 10 57 40 AM](https://user-images.githubusercontent.com/86497342/136708014-e34423a9-197d-4f27-81fc-6f58d0271410.png)
-
-## Conclusion 
-A hash table allows for efficient data lookups as it allows us to search a single bucket which is comparatively smaller than the linear list and contains just the relevant data grouped together as per the hash function. This saves a lot of searching time. The compromise is on the time taken to create the hash table in exchange for increased searching speed. The hash table creation takes more time as it segregates the data into buckets  as compared to dumping the entire content in a list. But once the table is created every search operation takes a dramatically small amount of time as compared to the linear way of searching. It is a more organized way of storing and retrieving information especially when we have a large amount of data.
