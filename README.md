@@ -5,6 +5,9 @@ In order to store information efficiently, it is important to structure it in a 
 
 Think of it as a Marie-Kondo-approved method of organization, where you have a set of bins with different labels -- computer games, lego, books. For Mario Kart, you would put it in computer games, your LEGO airport shuttle model would be put it in the bin labeled legos and finally, your collection of Harry Potter books would be put in the bin labeled books. This might take some time to set up, but because you have organized them into well-defined storage boxes, you will be able to look for your item very quickly as compared to searching sequentially through a big box of items where you might have to look through every single item before you find the lego piece. 
 
+<img width="362" alt="Screen Shot 2021-10-10 at 10 48 50 AM" src="https://user-images.githubusercontent.com/86497342/136709437-f3897ce4-b1ed-4b42-b0a5-9315c93ab1e3.png">
+
+
 ## Packages
 To run the notebook the following packages are required:
 1. [NumPy](https://numpy.org/)
@@ -32,11 +35,13 @@ The dataset used for this illustration contains the populations of all cities an
 We utilized linear search as a baseline search algorithm to look up terms within the dataset in linear time. 
 
 <b><u>create_linear_table()</u></b><br>
-In the ‘create_linear_table’ function, we create an unordered list of tuples containing all cities and their corresponding populations appending all elements in a list structure. 
-
+This function creates an unordered list of tuples containing all cities and their corresponding populations.
 <b><u>linear_search()</u></b><br>
-In the ‘linear_search’ function, it will look through the list of tuples one by one and return its populations with complexity O(N), in which N is the number of tuples in the list. 
+This function looks through the list of tuples one by one and return the city's population with time complexity O(N), where N is the number of tuples in the list. 
 Using linear search, it takes about 30 microseconds to find Yucca Valley's population. It is fast right, but it could be faster using the hash table. 
+
+![Screen Shot 2021-10-10 at 11 48 48 AM](https://user-images.githubusercontent.com/86497342/136709479-109f4b48-ef70-41e0-ba61-2c41e0f2ae5c.png)
+
 
 ***Hashtable***<br>
 Hash table consists of two main components: Hashtable and Hash Function.
@@ -44,7 +49,9 @@ A hashtable is represented as a list of lists (a.k.a buckets): For our dataset w
 
 This is how an empty hash table looks in memory.
 
-***Hash Function***<br>
+![Screen Shot 2021-10-10 at 10 29 54 AM](https://user-images.githubusercontent.com/86497342/136709504-df3e8038-b2cc-4f83-b354-5561a310865a.png)
+
+***hashcode()***<br>
 A hash function is an algorithm that produces an index of where a value can be found or stored in the hash table based on the actual data. The hash function in this example takes the first letter of each city name to give us the bucket index. The result of the hash function is analogous to the position of letters in the English alphabet. 
 
 <img width="432" alt="Screen Shot 2021-10-10 at 11 06 26 AM" src="https://user-images.githubusercontent.com/86944952/136709260-f9564d97-7b15-45e5-a4bc-5c2a1417ffa7.png">
