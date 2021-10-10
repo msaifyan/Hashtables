@@ -8,7 +8,7 @@
 
 ## Data
 The dataset used for this illustration contains the populations of all cities and towns in the state of California in 2010. The dataset contains four columns: name, type, county, and population. 
-<img src="images/cities_data_head.png" width="650" style="padding-top:10px">
+<img src="images/cities_data_head.png" width="300" style="padding-top:10px">
 
 Group Members:
 <li> Jih-Chin (Ajin) Chen </li>
