@@ -72,3 +72,7 @@ For this particular example, you can see that using a hash table speeds up the t
 
 
 ![Screen Shot 2021-10-10 at 10 57 40 AM](https://user-images.githubusercontent.com/86497342/136708014-e34423a9-197d-4f27-81fc-6f58d0271410.png)
+
+
+## Conclusion 
+A hash table allows for efficient data lookups as it allows us to search a single bucket which is comparatively smaller than the linear list and contains just the relevant data grouped together as per the hash function. This saves a lot of searching time. The compromise is on the time taken to create the hash table in exchange for increased searching speed. The hash table creation takes more time as it segregates the data into buckets  as compared to dumping the entire content in a list. But once the table is created every search operation takes a dramatically small amount of time as compared to the linear way of searching. It is a more organized way of storing and retrieving information especially when we have a large amount of data.
