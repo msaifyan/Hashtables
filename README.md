@@ -27,7 +27,7 @@ $ pip install lolviz
 
 
 ## Implementation 
-<u>htable_get()</u>
+<b><u>htable_get()</u></b><br>
 The htable_get function is our lookup function that takes in 2 parameters: the hash table created and the key of interest. The function first utilizes the hashcode function to get the index of the bucket where the key is located. It then searches linearly within that specific bucket to look for the key. If the key is found, the function will return its value, otherwise it will return None. 
 
 For this particular example, you can see that using a hash table speeds up the time it takes to look up Yucca Valley’s population by about 4 times. 
