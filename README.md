@@ -44,7 +44,7 @@ A hashtable is represented as a list of lists (a.k.a buckets): For our dataset w
 
 This is how an empty hash table looks in memory.
 
-## Hash Function
+### Hash Function
 A hash function is an algorithm that produces an index of where a value can be found or stored in the hash table based on the actual data. The hash function in this example takes the first letter of each city name to give us the bucket index. The result of the hash function is analogous to the position of letters in the English alphabet. 
 
 <img width="432" alt="Screen Shot 2021-10-10 at 11 06 26 AM" src="https://user-images.githubusercontent.com/86944952/136709260-f9564d97-7b15-45e5-a4bc-5c2a1417ffa7.png">
