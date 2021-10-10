@@ -6,9 +6,19 @@ In order to store information efficiently, it is important to structure it in a 
 Think of it as a Marie-Kondo-approved method of organization, where you have a set of bins with different labels -- computer games, lego, books. For Mario Kart, you would put it in computer games, your LEGO airport shuttle model would be put it in the bin labeled legos and finally, your collection of Harry Potter books would be put in the bin labeled books. This might take some time to set up, but because you have organized them into well-defined storage boxes, you will be able to look for your item very quickly as compared to searching sequentially through a big box of items where you might have to look through every single item before you find the lego piece. 
 
 ## Packages
+To run the notebook the following packages are required:
+1. [NumPy](https://numpy.org/)
+2. [pandas](https://pandas.pydata.org/)
+3. [lolviz](https://github.com/parrt/lolviz)
 
-## Our Data
+To install these packages simply run the following commands in your terminal.
+```
+$ pip install numpy
+$ pip install pandas
+$ brew install graphviz
+$ pip install lolviz
+```
 
-## Data
-<img src="images/cities_data_head.png" width="300" align="right" style="padding-top:10px"> The dataset used for this illustration contains the populations of all cities and towns in the state of California in 2010. The dataset contains four columns: name, type, county, and population. The source of the data can be found [here](https://www.downloadexcelfiles.com/us_en/download-excel-file-list-cities-california-state#.YWMrCC1h30o)
+## The Data
+<img src="images/cities_data_head.png" width="300" align="right" style="padding-top:10px"> The dataset used for this illustration contains the populations of all cities and towns in the state of California in 2010. The dataset contains four columns: name, type, county, and population. The source of the data can be found [here.](https://www.downloadexcelfiles.com/us_en/download-excel-file-list-cities-california-state#.YWMrCC1h30o)
 
