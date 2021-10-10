@@ -29,7 +29,7 @@ The dataset used for this illustration contains the populations of all cities an
 
 ## Implementation 
 <b><u>Linear Search</u></b><br>
-Linear search just like we put all items in one bucket and find them one by one in this container. 
+We utilized linear search as a baseline search algorithm to look up terms within the dataset in linear time. 
 <b><u>create_linear_table()</u></b><br>
 In the ‘create_linear_table’ function, we create an unordered list of tuples containing all cities and their corresponding populations appending all elements in a list structure. 
 
@@ -42,7 +42,7 @@ Using linear search, it takes about 30 microseconds to find Yucca Valley's popul
 The hashtable put function is used to actually map all of the city name keys to their corresponding buckets. The function employs the hashcode function to acquire a bucket index for the specific key given. Once the correct bucket is found, it is linearly searched to see if the key already exists within the bucket. If it does then its value is simply updated, otherwise the new key-value pair is linearly appended to the end of the bucket list.  For our data, you can see that our hashcode function puts all the cities in buckets based off of the first letter of their city name. 
 
 
-<img width="328" alt="hashtable_put_example" src="https://user-images.githubusercontent.com/86497342/136709130-6a2466c2-4827-45f9-aae0-06f72612bb91.png">
+<img width="200" alt="hashtable_put_example" src="https://user-images.githubusercontent.com/86497342/136709130-6a2466c2-4827-45f9-aae0-06f72612bb91.png">
 
 
 ***htable_get()***<br>
