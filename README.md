@@ -55,7 +55,7 @@ So the city names starting with ‘A’ will be allotted a bucket index 0, ‘B�
 The hashtable put function is used to actually map all of the city name keys to their corresponding buckets. The function employs the hashcode function to acquire a bucket index for the specific key given. Once the correct bucket is found, it is linearly searched to see if the key already exists within the bucket. If it does then its value is simply updated, otherwise the new key-value pair is linearly appended to the end of the bucket list.  For our data, you can see that our hashcode function puts all the cities in buckets based off of the first letter of their city name. 
 
 
-<img width="100" alt="hashtable_put_example" src="https://user-images.githubusercontent.com/86497342/136709130-6a2466c2-4827-45f9-aae0-06f72612bb91.png" align="right">
+<alt="hashtable_put_example" src="https://user-images.githubusercontent.com/86497342/136709130-6a2466c2-4827-45f9-aae0-06f72612bb91.png">
 
 
 ***htable_get()***<br>
