@@ -32,13 +32,10 @@ The dataset used for this illustration contains the populations of all cities an
 Linear search just like we put all items in one bucket and find them one by one in this container. 
 <b><u>create_linear_table()</u></b><br>
 In the ‘create_linear_table’ function, we create an unordered list of tuples containing all cities and their corresponding populations appending all elements in a list structure. 
-![Screen Shot1](https://user-images.githubusercontent.com/86497342/136708014-e34423a9-197d-4f27-81fc-6f58d0271410.png)
 
 <b><u>linear_search()</u></b><br>
 In the ‘linear_search’ function, it will look through the list of tuples one by one and return its populations with complexity O(N), in which N is the number of tuples in the list. 
-![Screen Shot2]()
 Using linear search, it takes about 30 microseconds to find Yucca Valley's population. It is fast right, but it could be faster using the hash table. 
-![Screen Shot3](https://user-images.githubusercontent.com/86497342/136708014-e34423a9-197d-4f27-81fc-6f58d0271410.png)
 
 
 
