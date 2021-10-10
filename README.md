@@ -36,6 +36,7 @@ We utilized linear search as a baseline search algorithm to look up terms within
 
 <b><u>create_linear_table()</u></b><br>
 This function creates an unordered list of tuples containing all cities and their corresponding populations.
+
 <b><u>linear_search()</u></b><br>
 This function looks through the list of tuples one by one and return the city's population with time complexity O(N), where N is the number of tuples in the list. 
 Using linear search, it takes about 30 microseconds to find Yucca Valley's population. It is fast right, but it could be faster using the hash table. 
