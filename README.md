@@ -38,6 +38,17 @@ In the ‘create_linear_table’ function, we create an unordered list of tuples
 In the ‘linear_search’ function, it will look through the list of tuples one by one and return its populations with complexity O(N), in which N is the number of tuples in the list. 
 Using linear search, it takes about 30 microseconds to find Yucca Valley's population. It is fast right, but it could be faster using the hash table. 
 
+## Hashtable
+Hash table consists of two main components: Hashtable and Hash Function.
+A hashtable is represented as a list of lists (a.k.a buckets): For our dataset we are creating a hashtable with 26 buckets. Each bucket is a container corresponding to every letter in the English alphabet.
+
+This is how an empty hash table looks in memory.
+
+# Hash Function
+A hash function is an algorithm that produces an index of where a value can be found or stored in the hash table based on the actual data. The hash function in this example takes the first letter of each city name to give us the bucket index. The result of the hash function is analogous to the position of letters in the English alphabet. 
+
+
+So the city names starting with ‘A’ will be allotted a bucket index 0, ‘B’ with 1 and so on till ‘Z’ gets 25, and all the cities with their population will be stored in the allotted bucket.it
 
 ***htable_put()***<br>
 The hashtable put function is used to actually map all of the city name keys to their corresponding buckets. The function employs the hashcode function to acquire a bucket index for the specific key given. Once the correct bucket is found, it is linearly searched to see if the key already exists within the bucket. If it does then its value is simply updated, otherwise the new key-value pair is linearly appended to the end of the bucket list.  For our data, you can see that our hashcode function puts all the cities in buckets based off of the first letter of their city name. 
