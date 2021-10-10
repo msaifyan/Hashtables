@@ -5,6 +5,11 @@ In order to store information efficiently, it is important to structure it in a 
 
 Think of it as a Marie-Kondo-approved method of organization, where you have a set of bins with different labels -- computer games, lego, books. For Mario Kart, you would put it in computer games, your LEGO airport shuttle model would be put it in the bin labeled legos and finally, your collection of Harry Potter books would be put in the bin labeled books. This might take some time to set up, but because you have organized them into well-defined storage boxes, you will be able to look for your item very quickly as compared to searching sequentially through a big box of items where you might have to look through every single item before you find the lego piece. 
 
+
+<img width="300" height="300" alt="Screen Shot 2021-10-10 at 10 48 50 AM" src="https://user-images.githubusercontent.com/86497342/136708685-83c26089-95f6-43d2-a88b-82fba211c2cd.png">
+
+
+
 ## Packages
 To run the notebook the following packages are required:
 1. [NumPy](https://numpy.org/)
