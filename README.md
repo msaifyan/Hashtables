@@ -20,7 +20,7 @@ $ pip install lolviz
 ```
 
 ## The Data
-<img src="images/cities_data_head.png" align="right"> The dataset used for this illustration contains the populations of all cities and towns in the state of California in 2010. The dataset contains four columns: name, type, county, and population. The source of the data can be found [here.](https://www.downloadexcelfiles.com/us_en/download-excel-file-list-cities-california-state#.YWMrCC1h30o)
+<img src="images/cities_data_head.png" width="300" align="right" style="padding-top:10px padding-bot:50px"> The dataset used for this illustration contains the populations of all cities and towns in the state of California in 2010. The dataset contains four columns: name, type, county, and population. The source of the data can be found [here.](https://www.downloadexcelfiles.com/us_en/download-excel-file-list-cities-california-state#.YWMrCC1h30o)
 
 
 
