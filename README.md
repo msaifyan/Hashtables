@@ -30,6 +30,7 @@ The dataset used for this illustration contains the populations of all cities an
 ## Implementation 
 <b><u>Linear Search</u></b><br>
 We utilized linear search as a baseline search algorithm to look up terms within the dataset in linear time. 
+
 <b><u>create_linear_table()</u></b><br>
 In the ‘create_linear_table’ function, we create an unordered list of tuples containing all cities and their corresponding populations appending all elements in a list structure. 
 
