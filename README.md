@@ -39,7 +39,7 @@ This function creates an unordered list of tuples containing all cities and thei
 
 ***linear_search()***<br>
 This function looks through the list of tuples one by one and return the city's population with time complexity O(N), where N is the number of tuples in the list. 
-Using linear search, it takes about 30 microseconds to find Yucca Valley's population. It is fast right, but it could be faster using the hash table. 
+Using linear search, it takes about 30 microseconds to find Yucca Valley's population. 
 
 ![Screen Shot 2021-10-10 at 11 48 48 AM](https://user-images.githubusercontent.com/86497342/136709479-109f4b48-ef70-41e0-ba61-2c41e0f2ae5c.png)
 
