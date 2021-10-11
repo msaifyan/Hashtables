@@ -1,7 +1,7 @@
-# Hashtables
+# Hash Tables
 
 ## Introduction
-In order to store information efficiently, it is important to structure it in a way that makes the data easily re-accessible. When we have a two-pair tuple where the first index is a key and the second index is the information, similar to a dictionary, we need a way to efficiently store a large number of tuples in order to re-access them at a later time. Rather than placing all these tuples into a list and searching through them linearly, hashtables allow us to map keys to specific bins where we can store these tuples. This exponentially increases our search efficiency and allows us to find information much more quickly at the expense of additional setup time.
+In order to store information efficiently, it is important to structure it in a way that makes the data easily re-accessible. When we have a two-pair tuple where the first index is a key and the second index is the information, similar to a dictionary, we need a way to efficiently store a large number of tuples in order to re-access them at a later time. Rather than placing all these tuples into a list and searching through them linearly, hash tables allow us to map keys to specific bins where we can store these tuples. This exponentially increases our search efficiency and allows us to find information much more quickly at the expense of additional setup time.
 
 Think of it as a Marie-Kondo-approved method of organization, where you have a set of bins with different labels -- computer games, lego, books. For Mario Kart, you would put it in computer games, your LEGO airport shuttle model would be put in the bin labeled legos and finally, your collection of Harry Potter books would be put in the bin labeled books. This might take some time to set up, but because you have organized them into well-defined storage boxes, you will be able to look for your item very quickly as compared to searching sequentially through a big box of items where you might have to look through every single item before you find the lego piece. 
 
@@ -23,7 +23,7 @@ $ pip install lolviz
 ```
 
 ## The Data
-The dataset used for this illustration contains the populations of all cities and towns in the state of California in 2010. The dataset contains four columns: name, type, county, and population. The source of the data can be found [here.](https://www.downloadexcelfiles.com/us_en/download-excel-file-list-cities-california-state#.YWMrCC1h30o) For our hashtable implementation, we utilized the city name and population columns. 
+The dataset used for this illustration contains the populations of all cities and towns in the state of California in 2010. The dataset contains four columns: name, type, county, and population. The source of the data can be found [here.](https://www.downloadexcelfiles.com/us_en/download-excel-file-list-cities-california-state#.YWMrCC1h30o) For our hash table implementation, we utilized the city name and population columns. 
 <img width="961" alt="Screen Shot 2021-10-10 at 11 20 16 AM" src="https://user-images.githubusercontent.com/86497342/136708418-a89a5a71-8b57-4a47-a63b-cef2e627d86d.png">
 
 
@@ -44,9 +44,9 @@ Using linear search, it takes about 30 microseconds to find Yucca Valley's popul
 ![Screen Shot 2021-10-10 at 11 48 48 AM](https://user-images.githubusercontent.com/86497342/136709479-109f4b48-ef70-41e0-ba61-2c41e0f2ae5c.png)
 
 
-***Hashtable***<br>
-Hash table consists of two main components: Hashtable and Hash Function.
-A hashtable is represented as a list of lists (a.k.a buckets): For our dataset we are creating a hashtable with 26 buckets. Each bucket is a container corresponding to every letter in the English alphabet.
+***Hash Table***<br>
+Hash table consists of two main components: hash table and hash function.
+A hash table is represented as a list of lists (a.k.a buckets). For our dataset we are creating a hash table with 26 buckets. Each bucket is a container corresponding to every letter in the English alphabet.
 
 This is how an empty hash table looks in memory.
 
@@ -60,7 +60,7 @@ A hash function is an algorithm that produces an index of where a value can be f
 So the city names starting with ‘A’ will be allotted a bucket index 0, ‘B’ with 1 and so on till ‘Z’ gets 25, and all the cities with their population will be stored in the allotted bucket.
 
 ***htable_put()***<br>
-The hashtable put function is used to actually map all of the city name keys to their corresponding buckets. The function employs the hashcode function to acquire a bucket index for the specific key given. Once the correct bucket is found, it is linearly searched to see if the key already exists within the bucket. If it does then its value is simply updated, otherwise the new key-value pair is linearly appended to the end of the bucket list.  For our data, you can see that our hashcode function puts all the cities in buckets based off of the first letter of their city name. 
+The htable_put function is used to actually map all of the city name keys to their corresponding buckets. The function employs the hashcode function to acquire a bucket index for the specific key given. Once the correct bucket is found, it is linearly searched to see if the key already exists within the bucket. If it does then its value is simply updated, otherwise the new key-value pair is linearly appended to the end of the bucket list.  For our data, you can see that our hashcode function puts all the cities in buckets based off of the first letter of their city name. 
 
 
 <img width="200" alt="hashtable_put_example" src="https://user-images.githubusercontent.com/86497342/136709130-6a2466c2-4827-45f9-aae0-06f72612bb91.png">
